@@ -1,0 +1,20 @@
+@import '../../styles/mixins';
+
+#upload-dialog {
+  padding: 10px 20px;
+}
+
+.divider {
+  height: 2px;
+}
+
+label {
+  padding: 9px;
+}
+
+.close-icon {
+  position: absolute;
+  right: 8px;
+  top: 2px;
+  color: #555;
+}

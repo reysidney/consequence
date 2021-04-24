@@ -1,0 +1,31 @@
+@import '../../styles/mixins';
+
+.uploader-div {
+  position: absolute;
+  width: 300px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+
+  .list {
+    padding: 0px 20px 20px;
+
+    .list-item {
+      padding: 2px 5px;
+      border-bottom: dashed 1px #000;
+
+      .list-item-text span {
+        font-size: 85%;
+      }
+
+      .list-item-icon {
+        min-width: 0;
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+}

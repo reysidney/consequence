@@ -1,0 +1,39 @@
+@import '../../styles/mixins';
+
+.layer-div {
+  position: absolute;
+  width: 300px;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.list-item {
+  padding: 0;
+  label {
+    padding: 0px 9px;
+  }
+}
+
+.header,
+.body {
+  margin: 16px;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.body {
+  font-size: 80%;
+}
+
+.close-icon {
+  position: absolute;
+  right: 8px;
+  top: 2px;
+  color: #555;
+}
