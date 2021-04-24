@@ -36,6 +36,16 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+# SETUP DB
+## Create the database and execute the queries below
+    sudo -u postgres psql postgres
+        CREATE USER admin WITH PASSWORD '@dm1n_p@55';
+        CREATE DATABASE appdb WITH ENCODING = 'UTF8';
+        ALTER ROLE admin SUPERUSER;
+        GRANT ALL PRIVILEGES ON DATABASE appdb TO admin;
+        GRANT ALL PRIVILEGES ON ALL TABLES in schema public TO admin;
+        \q
+
 ## SETUP FRONTEND
 
 ### Install npm packages
@@ -64,7 +74,7 @@ npm start
 
 ### Change Allowed Hosts in settings.py for your local/vm ip.
 ```
-sudo nano /var/www/html/boilerplate/backend/project/uploader/settings.py
+sudo nano /var/www/html/boilerplate/backend/project/boilerplate/settings.py
 ```
 
 ### Run Supervisor
