@@ -46,7 +46,7 @@ pip3 install -r requirements.txt
         GRANT ALL PRIVILEGES ON ALL TABLES in schema public TO admin;
         \q
 
-## SETUP FRONTEND
+## SETUP FRONTEND # npm 13.9.0
 
 ### Install npm packages
 ```
